@@ -48,7 +48,7 @@ function Navbar() {
             )}
           </div>
 
-          <ul className={show ? "lists" : "hide"}>
+          <ul className={show ? "lists" : "hide"} >
             <li>
               <Link href='/'>Home</Link>
             </li>

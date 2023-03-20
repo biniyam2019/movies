@@ -96,7 +96,7 @@ text-decoration: none;
 .imgs
 {
     position: relative;
-    height: 80%;
+    height: 60%;
     width: 80%;
      border: 2px solid #fff;
     border-radius: 6px;
@@ -107,8 +107,13 @@ text-decoration: none;
 }
 .desc
 {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     
+}
+.desc p
+{
+    font-size: 11px;
 }
 
 }
