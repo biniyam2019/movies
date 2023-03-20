@@ -1,0 +1,69 @@
+.container {
+  height: 70px;
+  width: 100%;
+   background-color: #7d0000;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  
+
+}
+ .right,.left
+{
+width: 50%;
+}
+.right
+{
+  padding-right: 50px;
+}.left
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.right ul a
+{
+  text-decoration: none;
+  color: #fff;
+  margin-right:10px ;
+}
+.right ul li
+{
+  list-style: none;
+  font-size: 20px;
+}
+/* logo styling */
+.logoContainer
+{
+  width: 95px;
+  height: 60px;
+  
+  position: relative;
+}
+/* now working on responsiveness of the website */
+
+@media screen and (max-width: 500px) {
+
+.left
+{
+  width: 100vw !important;
+  
+}
+
+.right
+{
+  width: 20%;
+}
+}
+.button
+{
+  height: 26px;
+  cursor: pointer;
+}
+
+
+
+
+

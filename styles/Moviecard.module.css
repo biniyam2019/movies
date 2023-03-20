@@ -1,0 +1,44 @@
+.imgcontainer {
+  position: relative;
+  width: 250px;
+  height: 80%;
+
+  color: #fff;
+}
+.container {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 10px;
+  border:red solid 2px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.container:hover
+{
+  transform: scale(1.002);
+   border: rgb(254, 254, 254) solid 2px;
+}
+.rate {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.title {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,94 @@
+.container {
+  height: calc(100vh - 70px);
+  width: 2000vw;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.imgContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.right {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: calc(100vw - 80px);
+  top: calc(50%);
+  z-index: 1;
+  cursor: pointer;
+}
+.left {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  left: 0;
+  top: calc(50%);
+}
+.images {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+@media  screen and (max-width :450px)
+{
+  .right
+  {
+     top: calc(50% + 40px) !important;
+     width: 50px;
+     height: 50px;
+     left: calc(100vw - 50px);
+  } .left
+  {
+     top: calc(50% + 40px) !important;
+      width: 50px;
+     height: 50px;
+  }
+  .trend
+  {
+    font-size: 1.8rem;
+    
+  }
+  .fire
+  {
+    margin-left: 2px !important;
+  }
+}
+
+.trend
+{
+  text-align: center;
+ height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 2rem;
+ background-color: black;
+ color: #fff;
+  font-family: "Brush Script MT", cursive; 
+}
+.fire
+{ margin-left:20px ;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}

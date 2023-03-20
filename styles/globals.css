@@ -1,0 +1,115 @@
+body {
+  padding: 0;
+  margin: 0;
+ overflow-x: hidden !important;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+.open
+{
+  display: none;
+}.close
+{
+  display: none;
+}
+
+/* controling navigation bar */
+
+
+@media  screen and (max-width:500px) {
+     .lists
+     {
+      display: none !important;
+     }
+     .open
+{  display: block;
+  width: 20px;
+  height: 20px;
+
+ position: absolute;
+ top: 27px;
+ right: 15px;
+}.close
+{
+  width: 20px;
+  height: 20px;
+
+ position: absolute;
+ top: 22px;
+ right: 15px;
+  display: block;
+}
+}
+ 
+.lists{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+  flex-direction: row !important;
+}
+ .hide
+{
+  display: flex !important;
+  background-color: rgb(2, 2, 27) ; 
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 99;
+  height: calc(100vh - 50px);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center !important;
+
+}
+.hide li
+{
+
+ width: 100%;
+ text-align: center;
+ height: 80px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.hide li:hover
+{
+   background-color: gray;
+}
+
+
+.open-icon {
+  animation: rotateOpen 0.2s ease-in;
+}
+
+.close-icon {
+  animation: rotateClose 0.2s ease-in;
+}
+
+@keyframes rotateOpen {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateClose {
+  from {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
